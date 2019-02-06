@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <title>会员码 </title>
+                <link rel="stylesheet" href="./css/reset.css">
+               
+                <script type="text/javascript" src="./js/flexible.js"></script>
+                <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+              
+               
+            </head>
+            <style>
+                /* 遮罩 */
+.zhezao{
+	background: gray; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    width: 100%; 
+    height: 100%; 
+    display: none; 
+    z-index: 20; 
+    filter: alpha(opacity=60); 
+    opacity: 0.5 !important;
+}
+                .zhezao{
+                    display: block;
+                }
+                .focus{
+                    background: url(images/foces.png) no-repeat;
+    background-size: 100%;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    z-index: 111;
+    /* margin-left: 3rem; */
+    right: 0;
+    top: 0.2rem;
+
+                }
+                .zhiyin{
+ font-size:0.4rem;
+ font-family:PingFang-SC-Medium;
+ font-weight:500;
+ color:black;
+ line-height:0.6rem;
+ position: absolute;
+ z-index: 111;
+ top:30%;
+ left: 20%;
+                }
+            </style>
+<body>
+            <div class="fenx"> 
+                    <div class="zhezao"></div>
+                    <div class="focus"></div>
+
+            </div>
+            <div class="zhiyin">点击右上角分享朋友圈有惊喜哦！！！</div>
+</body>
+</html>

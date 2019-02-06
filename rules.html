@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/index.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+		<div class="bg ">
+            <!--转盘-->
+			<div class="zuanpan">
+				<div class="zp_head"></div>
+                <div class="qb_logo"></div>
+				<div class="zp_body clearfix">
+					<div class="zb_left">
+						<div class="zp_act1"></div>
+						<div class="zp_act2">
+							<div class="zp_act2_1"></div>
+						</div>
+					</div>
+                    <div class="zb_right">
+                        <div class="zb_right_head">>>>点击查看我的礼品箱<<<</div>
+                        <p class="tips"><span>(实时中奖名单)</span></p>
+                        <div class="lp_list">
+                            <ul class="list_detail">
+                                <li>
+                                    <span class="detail_lift fl">2121</span>
+                                    <span class="detail_right fr">212121</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+				</div>
+			</div>
+            <!--左边logo-->
+            <div class="web_logo"></div>
+            <!--活动规则-->
+            <div class="act_rule">
+                <div class="act_rule_txt">
+
+                    <p>1、活动时间：2月5日00:00——2月7日23:59，抽奖次数每天重置；</p>
+                    <p>2、活动期间内完成对应充值，充值成功后方可进行抽奖，奖励一般情况下10分钟内发放，延迟超过30分钟可咨询客服；</p>
+                    <p>3、当玩家抽中其中一项奖励后，下次抽奖则不会再获得重复奖励；</p>
+                    <p>4、中奖玩家请立即在弹出的领奖窗口填写QQ号，系统将实时发放Q币 ，为免过期，一定要及时填写，万一发放失败，请前往礼品箱
+                        重试，QQ号填写错误无法修改；</p>
+                    <p>5、本活动为福利活动，最终解释权归特牛游戏所有，如果对活动规则有不清楚，可提前联系客服咨询。</p>
+
+                </div>
+            </div>
+            <!--红包-->
+            <div class="hb">
+                <div class="pocket"></div>
+                <div class="open_pocket"></div>
+            </div>
+            <!--z=活动规则-->
+            <div class="act_tips">
+                <div class="tips_txt">
+
+
+                    <p>1、关注公众号，根据活动规则领取红包。</p>
+                    <p>2、2月5-2月7日每日中午12点后，回复关键词（每日关键词不同），获得支付宝红包口令 。</p>
+                    <p>3、进任意一款H5游戏，寻找开启红包的关键词。</p>
+                    <p>4、每日发放388个红包，领完即止。</p>
+                    <p>5、本活动为福利活动，最终解释权归特牛游戏所有，如果对活动规则有不清楚，可提前联系客服咨询。</p>
+
+
+                </div>
+            </div>
+		</div>
+        <!--<div class="foot">-->
+            <!--<div class="foot_left"></div>-->
+        <!--</div>-->
+<!--遮罩-->
+        <div class="zhezao"></div>
+<!--中奖弹框-->
+        <div class="zhong_dialog">
+            <div class="z_dialog_head"></div>
+            <div class="z_dialog_body">
+                <div class="z_bd_top">
+                    <p class="z_tips">您所中得的奖品是</p>
+                    <p class="z_num"> 2000Q币</p>
+                    <p class="z_tips"> 我们将直接发放等值Q币到您的QQ账号</p>
+                </div>
+                <div class="z_bd_bottom">
+                    <input type="text" placeholder="请输入领奖QQ号">
+                    <button class="z_lq">确认领取</button>
+                </div>
+            </div>
+        </div>
+<!--充值弹框-->
+        <div class="add_cash">
+            <div class="close"></div>
+            <p>还需要充值<span class="add_num">200元</span>即可h获得一次抽奖机会</p>
+            <button>立即充值</button>
+        </div>
+<!--我的礼品箱-->
+        <div class="my_list">
+            <div class="close"></div>
+            <div class="my_list_head">我的礼品箱</div>
+          <table>
+             <tbody>
+             <div class="list_table_head">
+                 <p>礼品名称</p>
+                 <p>礼品说明</p>
+                 <p>备注</p>
+             </div>
+             </tbody>
+          </table>
+        </div>
+
+</body>
+</html>
+<script>
+    $(function () {
+        $('.zp_act1').on('click',function () {
+
+            $(".zp_act2_1").attr("class","zp_act2_1");
+            // 生成一个随机数1~100
+            var num = Math.floor(Math.random() * 100);
+// 定义一个字符串,也就是要添加的类名
+            var str = '';
+// 计算概率
+            if (num <= 50) {
+// num<=50表示有50%的概率抽到10元
+                str = 'jl500'
+            }else if (num < 71 ) {
+// num->51~70,概率为20%
+                str = 'jl20'
+            } else if (num < 86) {
+                str = 'jl50'
+            }else if (num < 95) {
+                str = 'jl100'
+            } else if (num < 99) {
+                str = 'jl200'
+            }else if(num <= 100){
+                str = 'jl10'
+            }
+            setTimeout(function () {
+// 页面加载2s后.添加类名,开始抽奖
+                $('.zp_act2_1').addClass(str);
+
+            },200);
+
+        })
+
+    })
+
+</script>

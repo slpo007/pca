@@ -1,0 +1,90 @@
+ /* 中奖记录列表 */
+.list_head{
+	background: url('../images/active.png') no-repeat;
+	background-size: 100%;
+	max-width: 750px;
+	height: 100%;
+}
+#f_white{
+    color: white;
+}
+/* kuangk */
+.list_k{
+    background: url('../images/zl_k.png') no-repeat;
+    background-size: 100%;
+    width: 9.3rem;
+    margin: 0 auto;
+    height: 70%;
+    border-bottom: 3px solid white;
+    border-radius: 1rem;
+    position: absolute;
+    top: 3rem;
+    left: 0.3333rem;
+}
+.list_detail{
+	width:9.013333333333334rem;
+ height:11.85333333333333rem;
+ background:rgba(0,0,0,0.2);
+ border-radius:0.26666666666666666rem;
+ margin: 0 auto;
+ margin-top: 0.2rem;
+}
+.list_title{
+    background: url(../images/active_head.png) no-repeat;
+    width: 3rem;
+    background-size: 100%;
+    width: 4.5rem;
+    height: 1.3rem;
+    position: absolute;
+    top: 1.4rem;
+    left: 2.7rem;
+}
+
+.list_detail .z_left{
+ float: left;
+ font-size:0.4rem;
+ font-family:PingFang-SC-Medium;
+ font-weight:500;
+ color:rgba(255,218,216,1);
+ line-height:0.6rem;
+}
+.list_detail .z_right{
+ 
+ font-size:0.4rem;
+ font-family:PingFang-SC-Medium;
+ font-weight:500;
+ color:#FEF5A5;
+ line-height:0.6rem;
+ float: left;
+ text-align: center;
+ 
+}
+.list_detail li{
+    padding: 1rem 0.2rem;
+    border-bottom: 1px solid #F86F66;
+    width: 90%;
+    margin-left: 1%;
+   
+}
+.list_detail{
+    overflow-x: scroll;
+   
+}
+.list_detail p ,.list_detail span{
+
+ font-size:0.37333333333333335rem;
+ font-family:MicrosoftYaHei;
+ font-weight:400;
+ color:rgba(255,218,216,1);
+ line-height:0.5866666666666667rem;
+ padding: 0 0.3rem;
+ 
+}
+.list_detail span{
+    display: block;
+    text-align: left;
+    text-indent: 0.2rem;
+}
+body > div > div.list_k > div > p:nth-child(1){
+    margin-top: 1rem;
+}

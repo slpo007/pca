@@ -1,0 +1,679 @@
+.bg{
+    margin: 0 auto;
+   height: 2370px;
+	min-height: 1000px;
+	background: url(../images/bg.png) no-repeat;
+	background-size: 100%;
+	min-width: 1650px;
+	display: none;
+}
+/* 转盘头部 */
+.zuanpan{
+	position: absolute;
+	height: 100%;
+	left: 50%;
+	margin-top: 33%;
+	margin-left: -300px;
+}
+.zp_head{
+	height: 150px;
+	background: url(../images/zp_head.png) no-repeat;
+	background-size: 100%;
+	width: 600px;
+	
+}
+/* 转盘主题 */
+
+.zp_act1{
+	margin: 0 auto;
+    width: 100px;
+    height: 120px;
+    background: url(../images/zp_act1.png) no-repeat;
+    background-size: 100%;
+    z-index: 2;
+    position: absolute;
+    left: 43%;
+    top: 28%;
+}
+.zp_act2{
+	margin: 0 auto;
+	width: 450px;
+	height: 450px;
+	background: url(../images/zp_act2.png) no-repeat;
+	background-size: 100%;
+	z-index: 1;
+}
+.zp_act2_1{
+	margin: 0 auto;
+	width: 350px;
+	height: 350px;
+	background: url(../images/zp_act2_1.png) no-repeat;
+	background-size: 100%;
+	z-index: 1;
+	position: absolute;
+	left: 22.5%;
+	top: 7%;
+}
+.zb_left{
+	position: relative;
+	left: -38%;
+	margin-top: 5%;
+}
+/*q币logo*/
+.qb_logo{
+	width: 51px;
+	height: 41px;
+	background:url("../images/qb_logo.png") no-repeat;
+	background-size: 100%;
+	top: 14%;
+	position: absolute;
+	left: -27%;
+
+}
+.zb_right_head{
+	width:300px;
+	height:45px;
+	background:rgba(0,0,0,0.2);
+	border:5px solid rgba(255, 213, 13, 1);
+	box-shadow:0px 3px 5px 0px rgba(223,6,7,1);
+	border-radius:23px;
+	font-size:20px;
+	font-family:FZY4JW--GB1-0;
+	font-weight:400;
+	color:rgba(255,255,255,1);
+	line-height:45px;
+	text-shadow:1px 2px 3px rgba(189,24,15,0.75);
+}
+.zb_right{
+	position: relative;
+	left: 70%;
+	margin-top: -76%;
+}
+.lp_list{
+	width: 310px;
+	height: 400px;
+	background: url("../images/ul_list.png") no-repeat;
+	background-size: 100%;
+	position: absolute;
+}
+.list_detail{
+	width: 230px;
+	height: 260px;
+	margin-top: 35%;
+	margin-left: 32px;
+	padding: 0 10px;
+
+}
+
+/*web_logo*/
+.web_logo{
+	width: 200px;
+	height: 304px;
+	background: url(../images/web_logo.png) no-repeat;
+	background-size: 100%;
+	position: fixed;
+	right: 0;
+	top:40%;
+}
+/*end*/
+/*开始抽奖*/
+.zp_act2_1.jl200 {
+	/* 转35deg就抽到200元,让它转十圈+3600deg */
+	transform: rotate(3635deg);
+	transition: all 3s;
+}
+.zp_act2_1.jl100 {
+	transform: rotate(3683deg);
+	transition: all 3s;
+}
+.zp_act2_1.jl50 {
+	transform: rotate(3745deg);
+	transition: all 3s;
+}
+.zp_act2_1.jl20 {
+	transform: rotate(3818deg);
+	transition: all 3s;
+}
+.zp_act2_1.jl10 {
+	transform: rotate(3904deg);
+	transition: all 3s;
+}
+.zp_act2_1.jl500 {
+	transform: rotate(3600deg);
+	transition: all 3s;
+}
+/*活动规则*/
+.act_rule{
+	 width:1000px;
+	 height:264px;
+	 background: url("../images/act_rule_bg.png") no-repeat;
+	 background-size: 100%;
+	 position: absolute;
+	 top: 125%;
+	 left: 50%;
+	 margin-left: -495px;
+
+ }
+.act_tips{
+	width:1000px;
+	height:264px;
+	background: url("../images/act_rule_bg.png") no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 200%;
+	left: 50%;
+	margin-left: -495px;
+
+}
+.act_rule_txt{
+	padding-top: 20px;
+	width: 952px;
+	height: 208px;
+	background: rgba(0,0,0,0.2);
+	border-radius: 20px;
+	margin-top: 30px;
+	margin-left: 16px;
+}
+.tips_txt{
+	padding-top: 20px;
+	width: 952px;
+	height: 208px;
+	background: rgba(0,0,0,0.2);
+	border-radius: 20px;
+	margin-top: 30px;
+	margin-left: 16px;
+}
+.act_rule_txt p{
+	font-size:16px;
+	font-family:MicrosoftYaHei;
+	font-weight:400;
+	color:rgba(255,218,216,1);
+	padding: 0 20px;
+}
+.tips_txt p{
+	font-size:16px;
+	font-family:MicrosoftYaHei;
+	font-weight:400;
+	color:rgba(255,218,216,1);
+	padding: 0 20px;
+}
+/*红包*/
+.pocket{
+	position: absolute;
+	top: 154%;
+	left: 50%;
+	margin-left: -270px;
+	height: 150px;
+	background: url(../images/pocket.png) no-repeat;
+	background-size: 100%;
+	width: 540px;
+
+
+}
+.open_pocket{
+	width: 200px;
+	height: 260px;
+	background: url("../images/open_pocket.png");
+	background-size: 100%;
+	position: absolute;
+	top: 170%;
+	left: 50%;
+	margin-left: -100px;
+}
+/*底部*/
+.foot{
+	width: 100%;
+	height: 134px;
+	background: url("../images/foot.png");
+	margin-top:-120px;
+	position: relative;
+}
+.foot_left{
+	width: 239px;
+	height: 63px;
+	background: url(../images/foot_left.png) no-repeat;
+	background-size: 105%;
+	position: absolute;
+	top:30px;
+	left: 10%;
+}
+/*中奖弹框*/
+.zhong_dialog{
+	width: 360px;
+	height: 317px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin-top:-150px ;
+	margin-left: -180px;
+	display: none;
+	background:rgba(255,255,255,1);
+	border-radius:20px;
+}
+.zhong_dialog p{
+	text-align: center;
+}
+.z_tips{
+	font-family:MicrosoftYaHei;
+	font-weight: normal;
+	font-size: 14px;
+	color: #333333;
+}
+.z_num{
+	font-family:MicrosoftYaHei-Bold;
+	font-weight: bold;
+	font-size: 18px;
+	color: #DF2E2E;
+}
+.z_bd_bottom input{
+	width:300px;
+	height:40px;
+	background:rgba(255,255,255,1);
+	border:1px solid rgba(221, 221, 221, 1);
+	border-radius:5px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.z_bd_bottom button,.add_cash button{
+	width:120px;
+	height:40px;
+	background:rgba(227,63,63,1);
+	border-radius:20px;
+	font-size:16px;
+	font-family:MicrosoftYaHei;
+	font-weight:400;
+	color:rgba(255,255,255,1);
+	line-height:40px;
+	margin-top: 20px;
+}
+.z_dialog_head{
+	width: 300px;
+	height: 100px;
+	background: url("../images/z_head.png") no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: -30px;
+	left: 50%;
+	margin-left: -150px;
+
+}
+.z_bd_top{
+	height: 90px;
+	background-color: #FFE168;
+	padding-top: 60px;
+	padding-bottom: 15px;
+
+}
+/*充值弹框*/
+.add_cash{
+	display: none;
+	padding-top: 50px;
+	width:360px;
+	height:140px;
+	background:rgba(255,255,255,1);
+	border-radius:20px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin-top:-95px ;
+	margin-left: -180px;
+}
+.add_cash p{
+	text-align: center;
+	font-family:MicrosoftYaHei;
+	font-weight: normal;
+	font-size: 14px;
+	color: #333333;
+}
+.add_num{
+	font-family:MicrosoftYaHei-Bold;
+	font-weight: bold;
+	font-size: 18px;
+	color: #DF2E2E;
+}
+.close{
+	width: 50px;
+	height: 50px;
+	background: url("../images/close.png") no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top:0;
+	right: 0;
+	margin-top: -25px;
+	margin-right: -25px;
+}
+
+/*我的礼品箱*/
+.my_list{
+	width:700px;
+	height:590px;
+	background:rgba(255,255,255,1);
+	border-radius:20px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin-top: -295px;
+	margin-left: -350px;
+
+}
+.my_list_head{
+	font-size:20px;
+	font-family:MicrosoftYaHei;
+	font-weight:400;
+	color:rgba(51,51,51,1);
+	text-align: center;
+	padding-top: 10px;
+}
+.list_table_head{
+	width:700px;
+	height:40px;
+	background:rgba(255,255,255,1);
+	border-radius:20px;
+}
+.list_table_head p{
+	display: inline-block;
+	font-size:16px;
+	font-family:MicrosoftYaHei;
+	font-weight:400;
+	color:rgba(102,102,102,1);
+}
+
+
+
+
+
+
+
+/* 分享给好友 */
+.share{
+	width:4rem;
+height:1rem;
+background:linear-gradient(0deg,rgba(255,198,23,1),rgba(255,232,75,1));
+border-radius:40px;
+font-size:0.3rem;
+font-family:PingFang-SC-Heavy;
+font-weight:800;
+color:rgba(122,36,9,1);
+margin-top: 74%;
+}
+.share_png{
+	width: 0.5rem;
+	height: 0.5rem;
+	background: url('../images/share_wx.png') no-repeat;
+	background-size: 100%;
+position: absolute;
+margin-top: 76%;
+margin-left: 36%;
+}
+/* tips */
+.tips{
+	font-size:16px;
+	font-family:MicrosoftYaHei;
+	font-weight:400;
+	color:rgba(255,255,255,1);
+	width:120px;
+	height:40px;
+	background:rgba(223,35,61,1);
+	border-radius:20px;
+	position: absolute;
+	margin-top: 10%;
+	z-index: 9;
+	margin-left: 16%;
+	line-height: 40px;
+}
+.tips span{
+	display: block;      /*设置为块级元素会独占一行形成上下居中的效果*/
+    position: relative;  /*定位横线（当横线的父元素）*/
+	text-indent: 0rem;
+         /*居中文字的颜色*/
+    text-align: center;
+}
+.tips span::before,.tips span::after{
+	content: '';
+    position: absolute;   /*定位背景横线的位置*/
+    top: 50%;
+    background: rgba(223,35,61,1);;   /*背景横线颜色*/
+    width: 60px;            /*单侧横线的长度*/
+    height: 2px;
+}
+.tips span::before{
+	left: -49%;
+}
+.tips span::after{
+	right: -49%;
+}
+/* danmu */
+.danmu{
+    background: url(../images/danmu.png) no-repeat;
+    background-size: 100%;
+    height: 65px;
+    width: 84%;
+    margin: 0 auto;
+    /* top: 1%; */
+    margin-top: 3%;
+}
+/* luck */
+.luck{
+	width:4.266666666666667rem;
+	height:0.9333333333333333rem;
+	background:rgba(178,26,34,1);
+	border:5px solid rgba(255, 213, 13, 1);
+	box-shadow:0rem 0.04rem 0.06666666666666667rem 0rem rgba(223,6,7,0.5);
+	border-radius:0.4666666666666667rem;
+	margin: 0 auto;
+	position:absolute;
+	z-index: 3;
+	left: 2.7rem;
+
+}
+.luck p{
+	height:0.9333333333333333rem;
+line-height: 0.9rem;
+	font-size:0.4rem;
+	font-family:PingFang-SC-Heavy;
+	font-weight:800;
+
+	background:linear-gradient(0deg,rgba(255,166,150,1) 0%, rgba(255,254,254,1) 100%);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+	text-align: center;
+}
+/* zhuanpan */
+.zhuanpan_two{
+
+	position: absolute;
+	width:7rem;
+ height:7rem;
+ background:rgba(247,146,105,1);
+ border:6px solid rgba(122, 36, 9, 1);
+ border-radius:0.25rem;
+ margin-top: 0.44rem;
+ margin-left: 0.44rem;
+
+
+
+}
+.zhuanpan{
+	background: url(../images/lunpan_one.png) no-repeat;
+	width:8.125rem;
+	 height:8.125rem;
+	background-size: 100%;
+	margin: 0 auto;
+	margin-top: 0.7rem;
+
+}
+/* 活动规则 */
+.active{
+	font-size:0.3rem;
+font-family:PingFang-SC-Bold;
+font-weight:bold;
+color:rgba(219,58,51,1);
+	width:6rem;
+height:1rem;
+background:linear-gradient(0deg,rgba(255,198,23,1),rgba(255,232,75,1));
+border-radius:40px;
+}
+.act_btn{
+	margin-top: 0.5rem;
+}
+/* goods */
+.goods li{
+	width: 1.9rem;
+ height:1.9rem;
+ background:rgba(242,110,79,1);
+ border:4px solid rgba(209, 51, 49, 1);
+ border-radius:0.5555555555555556rem;
+ float: left;
+ margin: 0.1rem;
+}
+.goods li div{
+	font-size:0.3rem;
+	width:1.9rem;
+height:1.7rem;
+background:#FFF2B8;
+border-bottom:4px solid rgba(209, 51, 49, 1);
+border-radius:0.5rem;
+}
+.good_tips{
+font-family:PingFang-SC-Bold;
+font-weight:bold;
+}
+.good_img{
+	width: 1.4rem;
+    height: 0.8rem;
+    background-size: 100%;
+    padding-top: 0.3rem;
+}
+#start{
+	background: #F73F03;
+		border-radius: 14px 14px 0.5rem 0.5rem;
+
+}
+#gogogo{
+	background: white;
+}
+#start img{
+	width: 1.9rem;
+    height: 1.7rem;
+    border-radius: 0.5rem;
+}
+#end img{
+	width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 0.5rem;
+    padding-top: 0.2rem;
+    padding-left: 0.1rem;
+
+}
+/* 未选择 */
+body > div.zhuanpan > div > ul > li:nth-child(1) > div{
+	background: rgba(244,214,133,1);;
+}
+
+/* 遮罩 */
+.zhezao{
+	background: gray;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 20;
+    filter: alpha(opacity=60);
+    opacity: 0.5 !important;
+}
+/* 中奖提示 */
+
+
+.dialog,.dialog_miss{
+	width:8rem;
+ height:5.6rem;
+ background:linear-gradient(0deg,rgba(245,209,65,1),rgba(255,225,104,1));
+ border-radius:0.26666666666666666rem;
+ position: absolute;
+ top: 0;
+ margin-top: 5.68rem;
+ left: 1rem;
+ display: none;
+}
+
+.dialog_miss{
+	background:rgba(255,255,255,1);
+	z-index: 9999;
+}
+.dialog p{
+ font-size:0.5466666666666666rem;
+ font-family:MicrosoftYaHei-Bold;
+ font-weight:bold;
+ color:rgba(223,46,46,1);
+ line-height:0.64rem;
+ margin-top: 1.6rem;
+}
+.dialog span{
+	display: block;
+	font-size:0.5466666666666666rem;
+	font-family:MicrosoftYaHei-Bold;
+	font-weight:bold;
+	color:rgba(223,46,46,1);
+}
+.ck_list,.ck_list_miss{
+	font-size:0.4533333333333333rem;
+ font-family:MicrosoftYaHei;
+ font-weight:400;
+
+ line-height:0.5333333333333333rem;
+}
+.ck_list button{
+	width:6.4rem;
+	height:1.0666666666666667rem;
+	background:rgba(227,63,63,1);
+	border-radius:0.5333333333333333rem;
+	color:rgba(255,255,255,1);
+}
+/* 中奖头部 */
+.dialog_head{
+	background: url(../images/z_head.png) no-repeat;
+    background-size: 100%;
+    width: 80%;
+    height: 1.8rem;
+    position: absolute;
+    top: -0.7rem;
+    left: 0.8rem;
+}
+
+/*未中奖 */
+.dialog_head_miss{
+	background: url(../images/m_head.png) no-repeat;
+    background-size: 100%;
+    width: 80%;
+    height: 1.8rem;
+    position: absolute;
+    top: -0.7rem;
+    left: 0.8rem;
+}
+.cry{
+	width:1.6rem;
+ height:1.6133333333333333rem;
+ background: url(../images/m-cry.png) no-repeat;
+ background-size: 100%;
+ margin: 1.3rem auto;
+}
+/* 不良 */
+.warning_bg{
+	width:8rem;
+	height:5.6rem;
+	background:linear-gradient(0deg,rgba(245,209,65,1),rgba(255,225,104,1));
+	border-radius:0.26666666666666666rem;
+	position: absolute;
+	top: 0;
+	margin-top: 5.68rem;
+	left: 1rem;
+	display: none;
+	z-index: 111;
+}
+.warning{
+	height: 2rem;
+	width: 1rem;
+}
